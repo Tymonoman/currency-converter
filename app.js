@@ -54,6 +54,7 @@ function updateCurrencies(amount, baseCurrency) {
                 eurValue = amount * (eurRate / plnRate);
                 plnValue = amount;
                 gbpValue = amount * (gbpRate / plnRate);
+                break;
             case 'GBP':
                 usdValue = amount * (usdRate / gbpRate);
                 eurValue = amount * (eurRate / gbpRate);
