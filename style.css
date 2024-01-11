@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;500&family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: #2E3047; /* Light gray background color */
+    font-family: 'Nunito'; /* Use Nunito font for body text */
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    font-family: 'Open Sans'; /* Use JetBrains Mono font for titles */
+    color: #707793; /* Dark gray title color */
+    text-shadow: 1px 1px 8px rgba(111, 118, 146, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #707793; /* Dark gray heading color */
+    text-shadow: 1px 1px 8px rgba(111, 118, 146, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+input[type="number"] {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 0px solid #707793; /* Light gray border color */
+    border-radius: 5px;
+    color: #969bae;
+    background-color: #3c3f58;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle box shadow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(111, 118, 146, 0.4); /* Blue shadow on focus */
+}
+
+/* Remove default spin buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
